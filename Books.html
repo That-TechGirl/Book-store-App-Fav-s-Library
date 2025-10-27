@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+     <!-- Boxicons CDN Link -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<style>
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    border-bottom: #333 1px solid ;
+    width: 100%;
+    padding-top: 10px;
+
+}
+.logo{
+    display: flex;
+}
+.logo-icon{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.nav-lists ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-lists ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+
+
+}
+.nav-lists ul li a:hover{
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav-lists ul li a.active {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+
+
+}
+.menu-button{
+    display: none;
+}
+
+marquee{
+    margin-top: 95px;
+    background: plum;
+    color: black;
+    font-size: 2.5rem;
+    height: 60px;
+}
+.Finacial-category img{
+    width: 150px;
+}
+.Finacial-category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.category1{
+    margin: 20px;
+    justify-content: center;
+    
+}
+.download{
+    background:linear-gradient(to right, #f6f, #f90);
+    color: #383737;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.download:hover{
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+.book1, .book2, .book3, .book4{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.hamburger-menu{
+    display: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+
+    .Finacial-category{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+    .menu-button{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav-lists{
+        display: none;
+    }
+
+}
+
+</style>
+<body>
+    <header>
+        <div class="nav-items">
+            <div class="logo">
+                <img class="logo-icon" src="./Assets/Images/logo.png" alt="Logo">
+                <h2>Fav's Library</h2>
+            </div>
+            <div class="nav-lists">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="Books.html" class="active">Books</a></li>
+                    <li> <a href="About.html">About</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="menu-button">
+                <i class='bx  bx-menu'  ></i>
+            </div>
+        
+        </div>
+
+    </header>
+
+
+    <main>
+        <section>
+        <marquee behavior="" direction="">Here are different categories of books, choose the one that best resonates with you and read. Happy Reading!</marquee>
+        </section>
+
+        <section>
+            <div class="category1">
+                    <h2>Financial Books</h2>
+                <div class="Finacial-category">
+                
+                    <div class="book1">
+                    <img src="./Assets/Images/think-and-grow-rich.jpg" alt="Think and Grow Rich">
+                    <p> This book contains "13 Steps to Riches," <br> which included developing a positive <br> mental  attitude, setting clear and specific <br> goals. </p>
+                    <blockquote>Author: ~Napolen Hill</blockquote>
+                    <a href="https://apex.oracle.com/pls/apex/lonestar/r/files/static/v13Y/Think-And-Grow-Rich_2011-06.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+
+                    </div>
+
+
+                    <div class="book2">
+                    <img src="./Assets/Images/the simple path to wealth.jpg" alt=" The simple path to wealth">
+                    <p> “The Simple Path to Wealth” by JL Collins.  <br>His three core rules – spend less than you <br> earn, invest the extra in low-cost index funds,<br> and avoid debt</p>
+                    <blockquote>Author: ~JL Collins</blockquote>
+                    <a href="https://cdn.bookey.app/files/pdf/book/en/the-simple-path-to-wealth.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+                    </div>
+
+                    <div class="book3">
+                    <img src="./Assets/Images/rich-dad-poor-dad.jpg" alt=" Rich Dad Poor Dad">
+                    <p>"Rich Dad, Poor Dad" discusses how <br> investing your money into assets such as real <br> estate allows your money to "work for you."</p>
+                    <blockquote>Author: ~Robert Kiyosaki</blockquote>
+                    <a href="https://dn721905.ca.archive.org/0/items/rich-dad-poor-dad_bongotweet/rich-dad-poor-dad.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+                    </div>
+
+                    <div class="book4">
+                    <img src="./Assets/Images/i will teach you to be rich.jpg" alt="I will teach you to be rich">
+                    <p>“I Will Teach You to Be Rich” by Ramit Sethi is a comprehensive guide to personal finance that offers practical advice for young adults seeking to build wealth and achieve financial independence.</p>
+                    <blockquote>Author: ~Ramit Sethi</blockquote>
+                    <a href="https://cdn.bookey.app/files/pdf/book/en/i-will-teach-you-to-be-rich.pdf">
+                    <button class="download">Download</button>
+                    </a>
+                    </div>
+
+                </div>
+
+
+
+                
+            </div> <br> <br>
+        </section>
+
+        <section>
+            <div class="category1">
+                    <h2>Educational Books for students</h2>
+                <div class="Finacial-category">
+                
+                    <div class="book1">
+                    <img src="./Assets/Images/The alchemist.jpg" alt="The alchemist">
+                    <p> The Alchemist is a story of following one's dreams to find one's purpose in life.</p>
+                    <blockquote>Author: ~Paulo Coelho</blockquote>
+                    <a href="https://icrrd.com/public/media/15-05-2021-084550The-Alchemist-Paulo-Coelho.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+
+                    </div>
+
+
+                    <div class="book2">
+                    <img src="./Assets/Images/The-7-Habits-of-Highly-Effective-People.webp" alt=" 7 Habits of Highly Effective people">
+                    <p>This book is a self help book and will very succinctly explain the 7 most common habits which almost all successful people and highly-effective people have</p>
+                    <blockquote>Author: ~ Stephen R. Covey</blockquote>
+                    <a href="https://icrrd.com/public/media/01-11-2020-212827The%207%20Habits%20of%20Highly%20Effective%20People.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+                    </div>
+
+                    <div class="book3">
+                    <img src="./Assets/Images/ATOMIC-HABITS.jpg" alt=" Atomic Habits">
+                    <p>This book is perfect for people who want to know how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results. </p>
+                    <blockquote>Author: ~James Clear</blockquote>
+                        <a href="https://dn790007.ca.archive.org/0/items/atomic-habits-pdfdrive/Atomic%20habits%20%28%20PDFDrive%20%29.pdf">
+                            <button class="download">Download Now</button>
+                        </a>
+                    </div>
+
+                    <div class="book4">
+                    <img src="./Assets/Images/A mind for numbers.jpg" alt="A mind for numbers">
+                    <p>A Mind for Numbers shows you the science behind learning, as well as the best methods to apply to different types of classes</p>
+                    <blockquote>Author: ~Babara Oakley</blockquote>
+                    <a href="https://cdn.bookey.app/files/pdf/book/en/a-mind-for-numbers.pdf">
+                    <button class="download">Download</button>
+                    </a>
+                    </div>
+
+                </div>
+
+
+
+                
+            </div>
+        </section>
+
+
+        <section>
+            <div class="category1">
+                    <h2>Business Books for Entreprenurs</h2>
+                <div class="Finacial-category">
+                
+                    <div class="book1">
+                    <img src="./Assets/Images/The lean startup.jpg" alt="The Lean Startup">
+                    <p> This book contains "13 Steps to Riches," <br> which included developing a positive <br> mental  attitude, setting clear and specific <br> goals. </p>
+                    <blockquote>Author: ~Napolen Hill</blockquote>
+                    <a href="https://apex.oracle.com/pls/apex/lonestar/r/files/static/v13Y/Think-And-Grow-Rich_2011-06.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+
+                    </div>
+
+
+                    <div class="book2">
+                    <img src="./Assets/Images/business for beginners.png" alt=" Business for Beginners">
+                    <p> “The Simple Path to Wealth” by JL Collins.  <br>His three core rules – spend less than you <br> earn, invest the extra in low-cost index funds,<br> and avoid debt</p>
+                    <blockquote>Author: ~JL Collins</blockquote>
+                    <a href="https://cdn.bookey.app/files/pdf/book/en/the-simple-path-to-wealth.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+                    </div>
+
+                    <div class="book3">
+                    <img src="./Assets/Images/ATOMIC-HABITS.jpg" alt=" Atomic Habits">
+                    <p>"Rich Dad, Poor Dad" discusses how <br> investing your money into assets such as real <br> estate allows your money to "work for you."</p>
+                    <blockquote>Author: ~Robert Kiyosaki</blockquote>
+                    <a href="https://dn721905.ca.archive.org/0/items/rich-dad-poor-dad_bongotweet/rich-dad-poor-dad.pdf">
+                        <button class="download">Download Now</button>
+                    </a>
+                    </div>
+
+                    <div class="book4">
+                    <img src="./Assets/Images/i will teach you to be rich.jpg" alt="I will teach you to be rich">
+                    <p>“I Will Teach You to Be Rich” by Ramit Sethi is a comprehensive guide to personal finance that offers practical advice for young adults seeking to build wealth and achieve financial independence.</p>
+                    <blockquote>Author: ~Ramit Sethi</blockquote>
+                    <a href="https://cdn.bookey.app/files/pdf/book/en/i-will-teach-you-to-be-rich.pdf">
+                    <button class="download">Download</button>
+                    </a>
+                    </div>
+
+                </div>
+
+
+
+                
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    </main>
+
+</body>
+</html>
