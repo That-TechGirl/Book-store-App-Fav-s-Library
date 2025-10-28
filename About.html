@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Boxicons CDN Link -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        .about-container{
+            
+            
+            height: 170vh;
+            width: 95%;
+            justify-content: center;
+            align-items: center;
+           
+            padding-top: 80px;
+
+        }
+        .about-content{
+            font-size: 1.5rem;
+            padding: 30px;
+            font-weight: 500;
+        }
+        .about-header{
+            font-size: 3rem;
+            padding-top: px;
+            font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
+        }
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    border-bottom: #333 1px solid ;
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+
+}
+.logo{
+    display: flex;
+}
+.logo-icon{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.nav-lists ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-lists ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+
+
+}
+.nav-lists ul li a:hover{
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav-lists ul li a.active {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+
+
+}
+.hero-image{
+    width: 90%;
+    height: 100vh;
+}
+.about-us{
+    display: flex;
+    background:linear-gradient(to right, #f6f, #f90);
+    border-radius: 15px;
+}
+.menu-button{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .about-content{
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+    .about-header{
+        font-size: 2rem;
+    }
+    .hero-image{
+    display: none;
+    }
+    .about-us{
+        height: 170vh;
+
+    }
+    .menu-button{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav-lists{
+        display: none;
+    }
+    .nav-lists.active{
+        display: flex
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-items">
+            <div class="logo">
+                <img class="logo-icon" src="./Assets/Images/logo.png" alt="Logo">
+                <h2>Fav's Library</h2>
+            </div>
+            <div class="nav-lists">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="Books.html" >Books</a></li>
+                    <li> <a href="About.html" class="active" >About</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-button">
+                <i class='bx  bx-menu' id="menu-button" ></i>
+            </div>
+        
+        </div>
+
+    </header> <br>
+
+    <section>
+        <div class="about-us">
+        <div class="hero-image">
+            <img class="hero-image" src="./Assets/Images/Books images.jpg" alt="">
+        </div>
+    <div class="about-container">
+        
+        <h2 class="about-header" >About Fav's Library</h2>
+        <p class="about-content">Welcome to Fav’s Library, a cozy corner for readers who believe that every page holds a new world. <br>
+            <br>
+        Born out of a deep love for stories, <br>
+        Fav’s Library was created to bring the joy of reading closer to everyone anywhere, anytime. <br> <br>
+
+        As a lifelong book lover, I wanted to build more than just a bookstore app. <br> <br>
+        I wanted to create a space where readers could explore, learn, and find the books that speak to their souls. <br> <br>
+        
+        At Fav’s Library, we celebrate books of all genres from timeless classics and contemporary fiction to self-help guides, <br>
+
+        romance, fantasy, and more. <br> <br>
+         Whether you’re a devoted reader, a curious learner, or just starting your reading journey, <br>
+        there’s something here for you. <br><br>
+
+        Our goal is simple: to make discovering and enjoying great books effortless, elegant, and inspiring. <br> <br>
+
+        So, grab your next read and let Fav’s Library be your companion in every chapter of your reading adventure. <br> <br>
+
+        Fav’s Library — where stories find their readers.
+
+
+    </div>
+        </p>
+    </div>
+
+    
+    </section>
+</body>
+</html>
+
+<script>
+    // Toggle menu
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-lists');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuIcon.classList.toggle('bx-x'); // changes the icon to 'X'
+    });
+  </script>
