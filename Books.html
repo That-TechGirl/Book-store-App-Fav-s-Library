@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
-     <!-- Boxicons CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Boxicons CDN Link -->
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
 </head>
 <style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
 .nav-items{
     display: flex;
     gap: 2rem;
@@ -117,6 +127,64 @@ marquee{
     width: 40px;
     cursor: pointer;
 }
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background: #333;
+    color: #fff;
+    gap: 35px;
+}
+.footer-content li a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-text{
+    text-align: center;
+    font-weight: 500;
+    margin-left: 0;
+}
+.footer-text p{
+    margin: 5px 0;
+    font-size: 1rem;
+}
+.subscribe-form{
+    
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.subscribe-form input{
+    width: 170px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+
+}
+.subscribe-form button{
+    padding: 15px ;
+    border-radius: 5px;
+    border: none;
+    background: #f90;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.subscribe-form button:hover{
+    background: #fff;
+    color: #333;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
 @media (max-width: 700px) {
 
     .Finacial-category{
@@ -329,6 +397,52 @@ marquee{
     
     
     </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+            <h3>Fav's Library</h3>
+            <p>Your one-stop destination for all your reading needs. <br> Discover, explore, and indulge in a world of books with us.</p>
+            </div>
+
+            <div class="about-footer">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+            </div>
+
+            <div class="contact-footer">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="Contact.html">Get In Touch</a></li>
+            </ul>
+            </div>
+
+            <div class="socials">
+            <h3>Follow Us</h3>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+            
+            </ul>
+            </div>
+            <div class="subscribe-form">
+            <h3>Subscribe</h3>
+            <form action="">
+                <input type="email" placeholder="Enter your email"> <br> <br>
+                <button type="submit">Subscribe</button>
+            </form>
+            </div>
+        </div><br>
+
+
+        <hr>
+        <div class="footer-bottom">
+            <p>copyright &copy;2024 Fav's Library. <br> Designed by <span>Favour Chukwuma</span></p>
+        </div>
+
+    </footer>
 
 </body>
 </html>

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookstore App</title>
     <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
 <!-- Boxicons CDN Link -->
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -17,7 +20,7 @@
                 <img class="logo-icon" src="./Assets/Images/logo.png" alt="Logo">
                 <h2>Fav's Library</h2>
             </div>
-            <div class="nav-lists">
+            <div class="nav-lists" id="navLists">
                 <ul>
                     <li> <a href="index.html" class="active">Home</a></li>
                     <li> <a href="Books.html">Books</a></li>
@@ -25,7 +28,7 @@
                     <li> <a href="Contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="menu-button">
+            <div class="menu-button" onclick="toggleMenu()">
                 <i class='bx  bx-menu' id="menu-button" ></i>
             </div>
             
@@ -42,7 +45,7 @@
         <section>
             <div class="hero-section">
                 <div class="hero-text">
-                    <h1>What would you like <br>To Read Today?</h1>
+                    <h1>What Would You Like <br>To Read Today?</h1>
                 </div>
                 <div class="hero-image">
                     <img class="hero-image" src="./Assets/Images/books shelf.jpg" alt="hero-image">
@@ -120,9 +123,52 @@
 
     </main>
     <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+            <h3>Fav's Library</h3>
+            <p>Your one-stop destination for all your reading needs. <br> Discover, explore, and indulge in a world of books with us.</p>
+            </div>
+
+            <div class="about-footer">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+            </div>
+
+            <div class="contact-footer">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="Contact.html">Get In Touch</a></li>
+            </ul>
+            </div>
+
+            <div class="socials">
+            <h3>Follow Us</h3>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+            
+            </ul>
+            </div>
+            <div class="subscribe-form">
+            <h3>Subscribe</h3>
+            <form action="">
+                <input type="email" placeholder="Enter your email"> <br> <br>
+                <button type="submit">Subscribe</button>
+            </form>
+            </div>
+        </div><br>
+
+
+        <hr>
+        <div class="footer-bottom">
+            <p>copyright &copy;2024 Fav's Library. <br> Designed by <span>Favour Chukwuma</span></p>
+        </div>
 
     </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>

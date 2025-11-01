@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 .nav-items{
     display: flex;
     gap: 2rem;
@@ -71,6 +77,13 @@
     font-weight: 500;
 
 }
+.download1:hover{
+    background: #f6f;
+    color: #161515;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
 .nav-lists ul li a:hover{
     background: #333;
     color: #fff;
@@ -101,7 +114,7 @@
 
 .card{
     
-    width: 280px;
+    width: 380px;
     background: rgb(51, 45, 51);
     color: #fff;
     font-size: 1.2rem;
@@ -171,6 +184,65 @@
 .menu-button{
     display: none;
 }
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background: #333;
+    color: #fff;
+    gap: 35px;
+}
+.footer-content li a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-text{
+    text-align: center;
+    font-weight: 500;
+    margin-left: 0;
+}
+.footer-text p{
+    margin: 5px 0;
+    font-size: 1rem;
+}
+.subscribe-form{
+    
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.subscribe-form input{
+    width: 170px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+
+}
+.subscribe-form button{
+    padding: 15px ;
+    border-radius: 5px;
+    border: none;
+    background: #f90;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.subscribe-form button:hover{
+    background: #fff;
+    color: #333;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+    /*Responsiveness for smaller screens*/
 @media (max-width: 500px){
     body{
         margin: 0;
@@ -183,7 +255,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding-top: 0;
+        padding-top: 100px;
     }
     .hero-image{
         width: 100%;
@@ -195,6 +267,9 @@
     }
     .nav-lists li a{
         display: none;
+    }
+    .nav-lists.show{
+        display: flex;
     }
     .hero-text h1{
         font-size: 35px;
@@ -240,7 +315,7 @@
     }
 }
     
-
+    /*Responsiveness for Tablets*/
 @media (max-width: 768px){
     .hero-text{
         font-size: 2rem;
@@ -262,5 +337,30 @@
     }
     .nav-lists{
         display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        color: #333;
+    }
+    .nav-lists.show{
+        max-height: 300px;
+    }
+    .nav-items{
+        position: relative;
+    }
+    .nav-lists li{
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        border
     }
 }
