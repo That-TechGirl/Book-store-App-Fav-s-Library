@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+=======
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
 .nav-items{
     display: flex;
     gap: 2rem;
@@ -77,6 +80,7 @@ body{
     font-weight: 500;
 
 }
+<<<<<<< HEAD
 .download1:hover{
     background: #f6f;
     color: #161515;
@@ -84,6 +88,8 @@ body{
     cursor: pointer;
     
 }
+=======
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
 .nav-lists ul li a:hover{
     background: #333;
     color: #fff;
@@ -114,7 +120,11 @@ body{
 
 .card{
     
+<<<<<<< HEAD
     width: 380px;
+=======
+    width: 280px;
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
     background: rgb(51, 45, 51);
     color: #fff;
     font-size: 1.2rem;
@@ -184,6 +194,7 @@ body{
 .menu-button{
     display: none;
 }
+<<<<<<< HEAD
 .footer-content{
     display: flex;
     justify-content: space-around;
@@ -243,6 +254,8 @@ body{
 }
 
     /*Responsiveness for smaller screens*/
+=======
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
 @media (max-width: 500px){
     body{
         margin: 0;
@@ -255,7 +268,11 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         padding-top: 100px;
+=======
+        padding-top: 0;
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
     }
     .hero-image{
         width: 100%;
@@ -268,9 +285,12 @@ body{
     .nav-lists li a{
         display: none;
     }
+<<<<<<< HEAD
     .nav-lists.show{
         display: flex;
     }
+=======
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
     .hero-text h1{
         font-size: 35px;
         padding: 0;
@@ -315,7 +335,11 @@ body{
     }
 }
     
+<<<<<<< HEAD
     /*Responsiveness for Tablets*/
+=======
+
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
 @media (max-width: 768px){
     .hero-text{
         font-size: 2rem;
@@ -337,6 +361,7 @@ body{
     }
     .nav-lists{
         display: none;
+<<<<<<< HEAD
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -362,5 +387,7 @@ body{
         width: 100%;
         text-align: center;
         border
+=======
+>>>>>>> 56453e11544ce32d6145b1d4e47bc9fd5ebe8df4
     }
 }
